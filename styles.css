@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Montserrat;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 13fr 5fr;
+    padding-top: 6px;
+}
+
+.header__side-button {
+    align-self: flex-end;
+    justify-self: center;
+    font-size: calc(2.3vw + 5px);
+    margin-bottom: 2vw;
+}
+
+.oracle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+    flex-grow: 1;
+}
+.oracle__prediction-image {
+    width: 360px;
+    height: 480px;
+}
+
+.oracle__prediction {
+    grid-column-start: 2;
+}
+
+.oracle__prediction-button {
+    display: block;
+    margin: 50px auto 0;
+    background: rgb(77, 4, 129);
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header__side-button {
+        grid-row-start: 2;
+    }
+
+    .header__logo-wrapper {
+        grid-column: 1/3;
+    }
+}
