@@ -1,1 +1,116 @@
-<h1>l o l</h1>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sky</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      padding: 0 25px;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 3fr 9fr 4fr;
+      padding-top: 15px;
+    }
+
+    .header__side-button {
+      align-self: center;
+      justify-self: center;
+      font-size: calc(2.5vw + 10px);
+    }
+
+    .oracle {
+      display: grid;
+      grid-template-columns: 1fr 320px 1fr;
+    }
+
+    .oracle__prediction {
+      grid-column-start: 2;
+    }
+
+    .oracle__prediction-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    .oracle__prediction-container {
+      width: 320px;
+      height: 450px;
+    }
+
+    .oracle__prediction-button {
+      display: block;
+      margin: 50px auto 0;
+      background: hsl(196, 50%, 61%);
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 767px) {
+      .header {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .header__side-button {
+        grid-row-start: 2;
+      }
+
+      .header__logo-wrapper {
+        grid-column: 1/3;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="container">
+      <div class="header">
+        <div class="header__side-button header__side-button_left">en/ru</div>
+        <div class="header__logo-wrapper">
+          <img src="./images/logo.png" style="width: 100%;">
+        </div>
+        <div class="header__side-button header__side-button_right">collage oracle</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="oracle">
+        <div class="oracle__prediction">
+          <div class="oracle__prediction-container">
+            <img src="./images/collages/1.jpg" class="oracle__prediction-image" id="prediction_image">
+          </div>
+          <button onclick="doPrediction()" class="oracle__prediction-button">ТУЦ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const predictionImage = document.getElementById('prediction_image')
+
+    function doPrediction() {
+      predictionImage.src = Math.random() < 0.5 ? './images/collages/2.jpg' : './images/collages/1.jpg';
+    }
+  </script>
+</body>
+
+</html>
