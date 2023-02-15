@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sky</title>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
   <link href="./styles.css" rel="stylesheet">
 </head>
 
@@ -21,21 +21,53 @@
       </div>
       <div class="header__side-button header__side-button_right">collage oracle</div>
     </div>
-    <div class="oracle">
+    <div class="opening" role="opener">
+      <div>This is a place of collage poetry and weird fortune-telling. Click the button to get your collage prediction.
+      </div>
+      <button onclick="doPrediction()" class="oracle__prediction-button">play</button>
+    </div>
+    <div>
+      <!-- <video src="./images/loading.mp4"></video> -->
+    </div>
+    <div class="oracle hidden" role="player">
+      <div style="margin-right: 75px"></div>
       <div class="oracle__prediction">
         <img src="./images/collages/1.jpg" class="oracle__prediction-image" id="prediction_image">
-        <button onclick="doPrediction()" class="oracle__prediction-button">ТУЦ</button>
+        <button onclick="doPrediction()" class="oracle__prediction-button">play <span style="display: none">one
+            more</span></button>
+      </div>
+      <div style="margin-left: 85px;width: 360px;height: 480px;position: relative;">
+        <iframe width="360" height="480" src="url" title="description"></iframe>
       </div>
     </div>
   </div>
 
   <script>
+
+    let test = false,
+      images = [
+        "./images/collages/",
+        "./images/collages/1.jpg",
+        "./images/collages/2.jpg",
+      ]
+
+    function select(n) {
+      return Math.floor(Math.random() * n)
+    }
+
+    function getRandomImage() {
+      return images[select(images.length - 1) + 1]
+    }
+
     const predictionImage = document.getElementById('prediction_image')
 
     let myNumber = 1;
 
     function doPrediction() {
-      predictionImage.src = myNumber++ % 2 ? './images/collages/2.jpg' : './images/collages/1.jpg';
+      predictionImage.src = getRandomImage();
+
+      document.querySelector('[role=opener]').classList.add('hidden')
+      document.querySelector('[role=player]').classList.add('visible')
     }
   </script>
 </body>

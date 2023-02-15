@@ -1,0 +1,6 @@
+./images
+./images/collages
+./images/collages/1.jpg
+./images/collages/2.jpg
+./images/loading.mp4
+./images/logo.png
