@@ -15,7 +15,7 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 3fr 13fr 5fr;
+    grid-template-columns: 5fr 13fr 5fr;
     padding-top: 6px;
 }
 
@@ -69,13 +69,34 @@ body {
     .header__logo-wrapper {
         grid-column: 1/3;
     }
+
+    .oracle {
+        flex-direction: column;
+    }
+
+    .opening > div:first-of-type {
+        width: 50%;
+    }
+
+    .oracle > div:first-of-type {
+        display: none;
+    }
+
+    .oracle {
+        height: auto;
+    }
+
+    .oracle > div:last-of-type {
+        margin-left: 0 !important;
+        margin-top: 20px;
+    }
 }
 
 .visible {
     display: flex !important;
 }
 
-[role=opener] {
+[role="opener"] {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -85,4 +106,16 @@ body {
 
 .hidden {
     display: none;
+}
+
+[role^="lang"] {
+    cursor: pointer;
+}
+
+[data-lang="ru"] [role="lang-rus"] {
+    font-weight: 700;
+}
+
+[data-lang="en"] [role="lang-eng"] {
+    font-weight: 700;
 }
