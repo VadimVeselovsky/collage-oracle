@@ -19,8 +19,7 @@
       document.querySelector('.app-wrapper').dataset.lang = language
     }
 
-    var i = [{},
-    {
+    var i = [{
       image: './images/collages/alena_k/1.png', text: `TASTE IT<br>
 sandwiches // pork belly// <br>
 pork ribs//lemon roll/<br>
@@ -35,6 +34,12 @@ carrot <br>
 pork chorizo<br>
 tomato sauce<br>
 corn<br>` },
+    {
+      image: `./images/collages/masha/1.jpg`,
+      text: `The main ingredient:<br>
+confident braking<br>
+in time`
+    }
     ]
     let test = false,
       images = i
@@ -44,7 +49,7 @@ corn<br>` },
     }
 
     function getRandomImage() {
-      return images[select(images.length - 1) + 1]
+      return images[select(images.length)]
     }
 
     let myNumber = 1;
