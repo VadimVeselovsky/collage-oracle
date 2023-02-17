@@ -1,138 +1,141 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
+<html lang="ru"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sky</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Tinos&amp;display=swap" rel="stylesheet">
   <link href="./styles.css" rel="stylesheet">
+  <script>
+    function selectLang(language) {
+      document.querySelector('.app-wrapper').dataset.lang = language
+    }
+
+    var i = [
+      './images/collages/',
+      './images/collages/1.jpg',
+      './images/collages/2.jpg',
+      './images/collages/alena_k',
+      './images/collages/alena_k/1.png',
+      './images/collages/alena_k/10.png',
+      './images/collages/alena_k/2.png',
+      './images/collages/alena_k/20230203-153659.png',
+      './images/collages/alena_k/20230203-1536592.png',
+      './images/collages/alena_k/3.png',
+      './images/collages/alena_k/4.png',
+      './images/collages/alena_k/5.png',
+      './images/collages/alena_k/6.png',
+      './images/collages/alena_k/7.png',
+      './images/collages/alena_k/8.png',
+      './images/collages/alena_k/9.png',
+      './images/collages/alina_d',
+      './images/collages/alina_d/IMG_4809.JPG',
+      './images/collages/alina_d/IMG_4810.JPG',
+      './images/collages/alina_d/Скан_20230207(11).jpg',
+      './images/collages/alina_d/Скан_20230207(12).jpg',
+      './images/collages/alina_d/Скан_20230207(2).jpg',
+      './images/collages/alina_d/Скан_20230207(3).jpg',
+      './images/collages/alina_d/Скан_20230207(4).jpg',
+      './images/collages/alina_d/Скан_20230207(5).jpg',
+      './images/collages/alina_d/Скан_20230207(6).jpg',
+      './images/collages/alina_d/Скан_20230207(7.2).jpg',
+      './images/collages/alina_d/Скан_20230207(9).jpg',
+      './images/collages/alina_d/Скан_20230208 (2).jpg',
+      './images/collages/liza',
+      './images/collages/liza/FullSizeRender.jpg',
+      './images/collages/liza/IMG_1718.PNG',
+      './images/collages/liza/IMG_1733.PNG',
+      './images/collages/liza/IMG_1744.PNG',
+      './images/collages/liza/IMG_1745.PNG',
+      './images/collages/liza/IMG_1746.PNG',
+      './images/collages/liza/IMG_1747.PNG',
+      './images/collages/liza/IMG_1749.PNG',
+      './images/collages/liza/IMG_1750.PNG',
+      './images/collages/liza/IMG_1751.PNG',
+      './images/collages/liza/IMG_1752.PNG',
+      './images/collages/liza/IMG_1753.PNG',
+      './images/collages/liza/IMG_1754.PNG',
+      './images/collages/liza/IMG_1755.PNG',
+      './images/collages/liza/IMG_1757.PNG',
+      './images/collages/liza/IMG_1758.PNG',
+      './images/collages/liza/IMG_1759.PNG',
+      './images/collages/liza/IMG_1760.PNG',
+      './images/collages/masha',
+      './images/collages/masha/1.jpg',
+      './images/collages/masha/10.png',
+      './images/collages/masha/2.jpg',
+      './images/collages/masha/3.jpg',
+      './images/collages/masha/4.jpg',
+      './images/collages/masha/5-1.png',
+      './images/collages/masha/5.png',
+      './images/collages/masha/6.png',
+      './images/collages/masha/7.png',
+      './images/collages/masha/8.png',
+      './images/collages/masha/9.png',
+      './images/collages/nikita',
+      './images/collages/nikita/обработанныекартинки',
+      './images/collages/nikita/обработанныекартинки/20230203-152824(1).jpeg',
+      './images/collages/nikita/обработанныекартинки/20230203-152824.jpeg',
+      './images/collages/nikita/обработанныекартинки/20230203-152924(1).jpeg',
+      './images/collages/nikita/обработанныекартинки/20230203-152924.jpeg',
+      './images/collages/nikita/обработанныекартинки/20230203-153041(1).jpeg',
+      './images/collages/nikita/обработанныекартинки/20230203-153041.jpeg',
+      './images/collages/nikita/обработанныекартинки/20230203-153212(1).jpeg',
+      './images/collages/nikita/обработанныекартинки/20230203-153212.jpeg',
+      './images/collages/nikita/обработанныекартинки/20230203-153400.jpeg',
+      './images/collages/nikita/ориги',
+      './images/collages/nikita/ориги/20230203-152824.jpeg',
+      './images/collages/nikita/ориги/20230203-152924.jpeg',
+      './images/collages/nikita/ориги/20230203-153041.jpeg',
+      './images/collages/nikita/ориги/20230203-153212.jpeg',
+      './images/collages/nikita/ориги/20230203-153400.jpeg',
+      './images/collages/vava',
+      './images/collages/vava/20230203-15415(1).jpg',
+      './images/collages/vava/20230203-154159.jpg',
+      './images/collages/vava/20230203-154303.jpg',
+      './images/collages/vava/20230203-154410.jpg',
+      './images/collages/vava/20230203-154523.jpg',
+      './images/collages/vava/20230203-154631.jpg',
+      './images/collages/vava/20230203-154747.jpg',
+      './images/collages/vava/20230203-154921.jpg',
+      './images/collages/vava/20230203-155009.jpg',
+      './images/collages/vava/20230203-161842.jpg',
+    ]
+
+    let test = false,
+      images = i
+
+    function select(n) {
+      return Math.floor(Math.random() * n)
+    }
+
+    function getRandomImage() {
+      return images[select(images.length - 1) + 1]
+    }
+
+    let myNumber = 1;
+
+    function doPrediction() {
+
+      const predictionImage = document.getElementById('qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg')
+      predictionImage.src = getRandomImage();
+
+      document.querySelector('[role=opener]').classList.add('hidden')
+      document.querySelector('[role=player]').classList.add('visible')
+    }
+  </script>
 </head>
 
-<script>
-  function selectLang(language) {
-    document.querySelector('.app-wrapper').dataset.lang = language
-  }
 
-  var i = [
-    './images/collages/',
-    './images/collages/1.jpg',
-    './images/collages/2.jpg',
-    './images/collages/alena_k',
-    './images/collages/alena_k/1.png',
-    './images/collages/alena_k/10.png',
-    './images/collages/alena_k/2.png',
-    './images/collages/alena_k/20230203-153659.png',
-    './images/collages/alena_k/20230203-1536592.png',
-    './images/collages/alena_k/3.png',
-    './images/collages/alena_k/4.png',
-    './images/collages/alena_k/5.png',
-    './images/collages/alena_k/6.png',
-    './images/collages/alena_k/7.png',
-    './images/collages/alena_k/8.png',
-    './images/collages/alena_k/9.png',
-    './images/collages/alina_d',
-    './images/collages/alina_d/IMG_4809.JPG',
-    './images/collages/alina_d/IMG_4810.JPG',
-    './images/collages/alina_d/Скан_20230207(11).jpg',
-    './images/collages/alina_d/Скан_20230207(12).jpg',
-    './images/collages/alina_d/Скан_20230207(2).jpg',
-    './images/collages/alina_d/Скан_20230207(3).jpg',
-    './images/collages/alina_d/Скан_20230207(4).jpg',
-    './images/collages/alina_d/Скан_20230207(5).jpg',
-    './images/collages/alina_d/Скан_20230207(6).jpg',
-    './images/collages/alina_d/Скан_20230207(7.2).jpg',
-    './images/collages/alina_d/Скан_20230207(9).jpg',
-    './images/collages/alina_d/Скан_20230208 (2).jpg',
-    './images/collages/liza',
-    './images/collages/liza/FullSizeRender.jpg',
-    './images/collages/liza/IMG_1718.PNG',
-    './images/collages/liza/IMG_1733.PNG',
-    './images/collages/liza/IMG_1744.PNG',
-    './images/collages/liza/IMG_1745.PNG',
-    './images/collages/liza/IMG_1746.PNG',
-    './images/collages/liza/IMG_1747.PNG',
-    './images/collages/liza/IMG_1749.PNG',
-    './images/collages/liza/IMG_1750.PNG',
-    './images/collages/liza/IMG_1751.PNG',
-    './images/collages/liza/IMG_1752.PNG',
-    './images/collages/liza/IMG_1753.PNG',
-    './images/collages/liza/IMG_1754.PNG',
-    './images/collages/liza/IMG_1755.PNG',
-    './images/collages/liza/IMG_1757.PNG',
-    './images/collages/liza/IMG_1758.PNG',
-    './images/collages/liza/IMG_1759.PNG',
-    './images/collages/liza/IMG_1760.PNG',
-    './images/collages/masha',
-    './images/collages/masha/1.jpg',
-    './images/collages/masha/10.png',
-    './images/collages/masha/2.jpg',
-    './images/collages/masha/3.jpg',
-    './images/collages/masha/4.jpg',
-    './images/collages/masha/5-1.png',
-    './images/collages/masha/5.png',
-    './images/collages/masha/6.png',
-    './images/collages/masha/7.png',
-    './images/collages/masha/8.png',
-    './images/collages/masha/9.png',
-    './images/collages/nikita',
-    './images/collages/nikita/обработанныекартинки',
-    './images/collages/nikita/обработанныекартинки/20230203-152824(1).jpeg',
-    './images/collages/nikita/обработанныекартинки/20230203-152824.jpeg',
-    './images/collages/nikita/обработанныекартинки/20230203-152924(1).jpeg',
-    './images/collages/nikita/обработанныекартинки/20230203-152924.jpeg',
-    './images/collages/nikita/обработанныекартинки/20230203-153041(1).jpeg',
-    './images/collages/nikita/обработанныекартинки/20230203-153041.jpeg',
-    './images/collages/nikita/обработанныекартинки/20230203-153212(1).jpeg',
-    './images/collages/nikita/обработанныекартинки/20230203-153212.jpeg',
-    './images/collages/nikita/обработанныекартинки/20230203-153400.jpeg',
-    './images/collages/nikita/ориги',
-    './images/collages/nikita/ориги/20230203-152824.jpeg',
-    './images/collages/nikita/ориги/20230203-152924.jpeg',
-    './images/collages/nikita/ориги/20230203-153041.jpeg',
-    './images/collages/nikita/ориги/20230203-153212.jpeg',
-    './images/collages/nikita/ориги/20230203-153400.jpeg',
-    './images/collages/vava',
-    './images/collages/vava/20230203-15415(1).jpg',
-    './images/collages/vava/20230203-154159.jpg',
-    './images/collages/vava/20230203-154303.jpg',
-    './images/collages/vava/20230203-154410.jpg',
-    './images/collages/vava/20230203-154523.jpg',
-    './images/collages/vava/20230203-154631.jpg',
-    './images/collages/vava/20230203-154747.jpg',
-    './images/collages/vava/20230203-154921.jpg',
-    './images/collages/vava/20230203-155009.jpg',
-    './images/collages/vava/20230203-161842.jpg',
-  ]
-
-  let test = false,
-    images = i
-
-  function select(n) {
-    return Math.floor(Math.random() * n)
-  }
-
-  function getRandomImage() {
-    return images[select(images.length - 1) + 1]
-  }
-
-  let myNumber = 1;
-
-  function doPrediction() {
-
-    const predictionImage = document.getElementById('qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg')
-    predictionImage.src = getRandomImage();
-
-    document.querySelector('[role=opener]').classList.add('hidden')
-    document.querySelector('[role=player]').classList.add('visible')
-  }
-</script>
 
 <body>
-  <div class="app-wrapper" data-lang="ru">
+  <div class="app-wrapper" data-lang="ru" style="
+    padding-bottom: 255px;
+">
     <div class="header">
       <div class="header__side-button header__side-button_left">
         <span onclick="selectLang('en')" role="lang-eng">en</span>
@@ -145,23 +148,28 @@
       <div class="header__side-button header__side-button_right">collage oracle</div>
     </div>
     <div class="opening" role="opener">
-      <div class="opening__text">This is a place of collage poetry and weird fortune-telling. Click the button to get your collage prediction.</div>
+      <div class="opening__text" style="
+    font-size: 30px;
+    font-family: Montserrat;
+    width: 567px;
+">This is a place of collage poetry and weird fortune-telling. Click the button to get your collage prediction.</div>
       <button onclick="doPrediction()" class="oracle__prediction-button">play</button>
     </div>
     <div class="oracle oracle_loading hidden" role="player">
       <div style="margin-right: 25px; padding-left: 20px">
-        <img style="visibility: hidden;" width="400" src="./images/left.png" />
+        <img style="visibility: hidden;" width="400" src="./images/left.png">
       </div>
       <div class="oracle__prediction">
-        <img src="./images/collages/1.jpg" class="oracle__prediction-image"
-          id="qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg">
+        <img src="./images/collages/1.jpg" class="oracle__prediction-image" id="qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg">
         <button onclick="doPrediction()" class="oracle__prediction-button">play <span style="display: none">one
             more</span></button>
       </div>
-      <div style="margin-left: 85px;width: 360px;height: 480px;position: relative;" data-_>
+      <div style="margin-left: 85px;width: 360px;height: 480px;position: relative;" data-_="">
       </div>
     </div>
   </div>
-</body>
 
-</html>
+
+
+
+</body></html>
