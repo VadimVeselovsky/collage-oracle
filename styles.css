@@ -24,6 +24,7 @@ body {
     justify-self: center;
     font-size: calc(2.3vw + 5px);
     margin-bottom: 2vw;
+    color: rgb(77, 4, 129);
 }
 
 .oracle {
@@ -41,20 +42,27 @@ body {
     height: 480px;
 }
 
+.oracle__prediction-video {
+    margin: 125px 0;
+}
+
 .oracle__prediction {
     grid-column-start: 2;
 }
-
 .oracle__prediction-button {
     display: block;
     margin: 50px auto 0;
     background: rgb(77, 4, 129);
     color: white;
     height: 50px;
-    width: 50px;
+    width: 70px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+.opening__text {
+    width: 277px;
 }
 
 @media (max-width: 767px) {
