@@ -66,6 +66,41 @@ body {
     width: 277px;
 }
 
+[role="opener"] {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none !important;
+}
+
+[role^="lang"] {
+    cursor: pointer;
+}
+
+[data-lang="ru"] [role="lang-rus"] {
+    font-weight: 700;
+}
+
+[data-lang="en"] [role="lang-eng"] {
+    font-weight: 700;
+}
+
+.loading {
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    padding-top: 15px;
+}
+
+.loading__video {
+    width: 300px;
+}
+
 @media (max-width: 767px) {
     .header {
         grid-template-columns: 1fr 1fr;
@@ -99,32 +134,4 @@ body {
         margin-left: 0 !important;
         margin-top: 20px;
     }
-}
-
-.visible {
-    display: flex !important;
-}
-
-[role="opener"] {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hidden {
-    display: none;
-}
-
-[role^="lang"] {
-    cursor: pointer;
-}
-
-[data-lang="ru"] [role="lang-rus"] {
-    font-weight: 700;
-}
-
-[data-lang="en"] [role="lang-eng"] {
-    font-weight: 700;
 }

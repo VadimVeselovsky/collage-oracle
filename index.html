@@ -14,67 +14,15 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Tinos&amp;display=swap"
     rel="stylesheet">
   <link href="./styles.css" rel="stylesheet">
-  <script>
-    function selectLang(language) {
-      document.querySelector('.app-wrapper').dataset.lang = language
-    }
-
-    var i = [{
-      image: './images/collages/alena_k/1.png', text: `TASTE IT<br>
-sandwiches // pork belly// <br>
-pork ribs//lemon roll/<br>
- chimichuri sauce/hot croutons<br>
-chili pepper//onion<br>
-red sweet pepper//white beans<br>
-poppy seed roll<br>
-garlic<br>
-water<br>
-carrot <br>
- vegetable oil with garlic<br>
-pork chorizo<br>
-tomato sauce<br>
-corn<br>` },
-    {
-      image: `./images/collages/masha/1.jpg`,
-      text: `The main ingredient:<br>
-confident braking<br>
-in time`
-    }
-    ]
-    let test = false,
-      images = i
-
-    function select(n) {
-      return Math.floor(Math.random() * n)
-    }
-
-    function getRandomImage() {
-      return images[select(images.length)]
-    }
-
-    let myNumber = 1;
-
-    function doPrediction() {
-
-      const random = getRandomImage();
-
-      const predictionImage = document.getElementById('qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg')
-      predictionImage.src = random.image;
-
-      document.getElementById('ugvugjgvk').innerHTML = random.text;
-
-      document.querySelector('[role=opener]').classList.add('hidden')
-      document.querySelector('[role=player]').classList.add('visible')
-    }
-  </script>
+  <script src="./shared-names.js"></script>
+  <script src="./images-list.js"></script>
+  <script src="./script.js"></script>
 </head>
 
 
 
 <body>
-  <div class="app-wrapper" data-lang="ru" style="
-    padding-bottom: 255px;
-">
+  <div class="app-wrapper" data-lang="ru" style="padding-bottom: 255px;">
     <div class="header">
       <div class="header__side-button header__side-button_left">
         <span onclick="selectLang('en')" role="lang-eng">en</span>
@@ -87,11 +35,8 @@ in time`
       <div class="header__side-button header__side-button_right">collage oracle</div>
     </div>
     <div class="opening" role="opener">
-      <div class="opening__text" style="
-    font-size: 30px;
-    font-family: Montserrat;
-    width: 567px;
-">This is a place of collage poetry and weird fortune-telling. Click the button to get your collage prediction.</div>
+      <div class="opening__text" style="font-size: 30px;font-family: Montserrat;width: 567px;">This is a place of
+        collage poetry and weird fortune-telling. Click the button to get your collage prediction.</div>
       <button onclick="doPrediction()" class="oracle__prediction-button">play</button>
     </div>
     <div class="oracle oracle_loading hidden" role="player">
@@ -99,8 +44,7 @@ in time`
         <img style="visibility: hidden;" width="400" src="./images/left.png">
       </div>
       <div class="oracle__prediction">
-        <img src="./images/collages/1.jpg" class="oracle__prediction-image"
-          id="qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg">
+        <img class="oracle__prediction-image" id="qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg">
         <button onclick="doPrediction()" class="oracle__prediction-button">play <span style="display: none">one
             more</span></button>
         <div id="ugvugjgvk" style="
@@ -117,6 +61,9 @@ in time`
       </div>
       <div style="margin-left: 85px;width: 360px;height: 480px;position: relative;" data-_="">
       </div>
+    </div>
+    <div role="loading" class="hidden loading">
+      <video id="loading-video-element" class="loading__video" loop src="./images/loading.mp4"></video>
     </div>
   </div>
 
