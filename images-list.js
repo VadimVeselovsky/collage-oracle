@@ -270,10 +270,10 @@ window[sharedNames.images] = [
     /// Vava
 
     {
-        src: './images/collages/vava/20230203-15415(1).jpg', text: `All strings broke?<br>
+        src: './images/collages/vava/20230203-154159.jpg', text: `All strings broke?<br>
     Do you think being healthy is sad?<br>
     Revelation is an expensive thing.` },
-    { src: './images/collages/vava/20230203-154159.jpg', text: `HOW TO HEAL` },
+    { src: './images/collages/vava/20230203-15415(1).jpg', text: `HOW TO HEAL` },
     {
         src: './images/collages/vava/20230203-154303.jpg', text: `Enough drinking blood….<br>
      Sex is within our power`},
