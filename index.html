@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -22,7 +22,7 @@
 
 
 <body>
-  <div class="app-wrapper" data-lang="ru" style="padding-bottom: 255px;">
+  <div class="app-wrapper" data-lang="en" style="padding-bottom: 255px;">
     <div class="header">
       <div class="header__side-button header__side-button_left">
         <span onclick="selectLang('en')" role="lang-eng">en</span>
@@ -45,21 +45,10 @@
       </div>
       <div class="oracle__prediction">
         <img class="oracle__prediction-image" id="qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg">
-        <button onclick="doPrediction()" class="oracle__prediction-button">play <span style="display: none">one
-            more</span></button>
-        <div id="ugvugjgvk" style="
-        position: absolute;
-        width: 100%;
-        height: 370px;
-        top: 0;
-        left: calc(100% + 50px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Montserrat';
-        "></div>
+        <button onclick="doPrediction()" class="oracle__prediction-button">play</button>
       </div>
-      <div style="margin-left: 85px;width: 360px;height: 480px;position: relative;" data-_="">
+      <div style="margin-left: 85px;width: 360px;height: 480px;position: relative;font-family: 'Montserrat';">
+        <div id="translation"></div>
       </div>
     </div>
     <div role="loading" class="hidden loading">
@@ -67,7 +56,7 @@
     </div>
   </div>
 
-
+  <!-- <script>doPrediction()</script> -->
 
 
 </body>

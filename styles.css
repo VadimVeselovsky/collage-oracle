@@ -82,13 +82,7 @@ body {
     cursor: pointer;
 }
 
-[data-lang="ru"] [role="lang-rus"] {
-    font-weight: 700;
-}
 
-[data-lang="en"] [role="lang-eng"] {
-    font-weight: 700;
-}
 
 .loading {
     justify-content: center;
@@ -134,4 +128,16 @@ body {
         margin-left: 0 !important;
         margin-top: 20px;
     }
+}
+
+[data-lang="ru"] [role="lang-rus"] {
+    font-weight: 700;
+}
+
+[data-lang="ru"] #translation {
+    display: none !important;
+}
+
+[data-lang="en"] [role="lang-eng"] {
+    font-weight: 700;
 }

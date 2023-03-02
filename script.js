@@ -8,7 +8,8 @@ let test = false,
     images = i
 
 function select(n) {
-    return Math.floor(Math.random() * n)
+    return Math.floor(Math.random() * n) 
+    // return 0
 }
 
 function getRandomImage() {
@@ -30,15 +31,13 @@ function showScreen(screenToOpen) {
         )
 }
 
-let myNumber = 1;
-
 function doPrediction() {
     const random = getRandomImage();
 
     const predictionImage = document.getElementById('qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg')
     predictionImage.src = random.image;
 
-    document.getElementById('ugvugjgvk').innerHTML = random.html;
+    document.getElementById('translation').innerHTML = random.html;
 
     predictionImage.addEventListener('load', onImageLoaded)
 
