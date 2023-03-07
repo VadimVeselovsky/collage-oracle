@@ -293,11 +293,11 @@ window[sharedNames.images] = [
 
     {
         src: "./images/collages/liza/IMG_1718.PNG",
-        text: "\nFlaming\n Secret\n\n"
+        text: "\nGREEN\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1733.PNG",
-        text: "\nGREEN\n\n"
+        src: "./images/collages/liza/FullSizeRender.jpg",
+        text: "\nFlaming\n Secret\n\n"
     },
     {
         src: "./images/collages/liza/IMG_1744.PNG",
