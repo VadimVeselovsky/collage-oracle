@@ -3,7 +3,7 @@ window[sharedNames.images] = [
     /// ALENA_K
 
     {
-        src: './images/collages/alena_k/1.png',
+        src: './images/collages/alena_k/1.jpg',
         html: `<span style="position: absolute;top: 24%;right: 5%;font-weight: 800;font-size: 21px;">TASTE IT </span>
         <span style="
             left: 43%;
@@ -38,41 +38,41 @@ window[sharedNames.images] = [
     </span>`
     },
     {
-        src: './images/collages/alena_k/2.png',
+        src: './images/collages/alena_k/2.jpg',
         text: `REACH THE POINT
         If something somewhere has departed, it means something somewhere has arrived.
         And this place is suddenly below the back.
         `
     },
     {
-        src: './images/collages/alena_k/3.png',
+        src: './images/collages/alena_k/3.jpg',
         text: `Your faucet is dripping?
         psychologist is needed
        heart will say thank you
        `
     },
     {
-        src: './images/collages/alena_k/4.png',
+        src: './images/collages/alena_k/4.jpg',
         text: `BADAN.
 
         WHO KNOWS, WHAT HE IS DIGGING FOR.
         `
     },
     {
-        src: './images/collages/alena_k/5.png',
+        src: './images/collages/alena_k/5.jpg',
         text: `Don't freeze up!
 
         bless you
         `
     },
     {
-        src: './images/collages/alena_k/6.png',
+        src: './images/collages/alena_k/6.jpg',
         text: `Hey, listen up!
         When, if not now?
         `
     },
     {
-        src: './images/collages/alena_k/7.png',
+        src: './images/collages/alena_k/7.jpg',
         text: `Remember:
         BUTTERFLIES DESIGNERS
         IN SOCIAL MEDIA
@@ -81,7 +81,7 @@ window[sharedNames.images] = [
         `
     },
     {
-        src: './images/collages/alena_k/8.png',
+        src: './images/collages/alena_k/8.jpg',
         text: `Don't stress yourself!
         Danger is gone
         JUST CLICK
@@ -98,7 +98,7 @@ window[sharedNames.images] = [
         `
     },
     {
-        src: './images/collages/alena_k/9.png',
+        src: './images/collages/alena_k/9.jpg',
         text: `ARCHIPELAGO
         OF BEAUTY?
         
@@ -111,7 +111,7 @@ window[sharedNames.images] = [
         `
     },
     {
-        src: './images/collages/alena_k/10.png',
+        src: './images/collages/alena_k/10.jpg',
         text: `HUNT FOR
 
         YOUR HEALTH
@@ -120,7 +120,7 @@ window[sharedNames.images] = [
         `
     },
     {
-        src: './images/collages/alena_k/20230203-153659.png',
+        src: './images/collages/alena_k/20230203-153659.jpg',
         text: `SECRET OF LIFE
 
         a pill to the house
@@ -128,7 +128,7 @@ window[sharedNames.images] = [
         `
     },
     {
-        src: './images/collages/alena_k/20230203-1536592.png',
+        src: './images/collages/alena_k/20230203-1536592.jpg',
         text: `NOW, JUST LIKE EVERYONE ELSE,
         I HAVE 
        BUBBLES 
@@ -167,24 +167,24 @@ window[sharedNames.images] = [
        `
     },
     {
-        src: './images/collages/masha/5.png',
+        src: './images/collages/masha/5.jpg',
         text: `morning. august - september
 
         are you drifting?
 `
     },
     {
-        src: './images/collages/masha/6.png',
+        src: './images/collages/masha/6.jpg',
         text: `Twenty years - like one summer 
         who am I?
         `
     },
     {
-        src: './images/collages/masha/7.png',
+        src: './images/collages/masha/7.jpg',
         text: `SHPRYADBOAG`
     },
     {
-        src: './images/collages/masha/8.png',
+        src: './images/collages/masha/8.jpg',
         text: `all day
         you are silent
          / we only live once
@@ -192,35 +192,35 @@ window[sharedNames.images] = [
         `
     },
     {
-        src: './images/collages/masha/9.png',
+        src: './images/collages/masha/9.jpg',
         text: `key word:
         hooch
         `
     },
     {
-        src: './images/collages/masha/10.png',
+        src: './images/collages/masha/10.jpg',
         text: `get housing, open a maternity home, return prizes`
     },
 
     /// NIKITA
 
     {
-        src: './images/collages/nikita/обработанныекартинки/20230203-152824(1).jpeg',
+        src: './images/collages/nikita/обработанныекартинки/20230203-152824(1).jpg',
         text: `HORSE IN A COAT<br>
         <br>
     just for<br>
     JOY
     `},
     {
-        src: './images/collages/nikita/обработанныекартинки/20230203-152824.jpeg',
+        src: './images/collages/nikita/обработанныекартинки/20230203-152824.jpg',
         text: `A MILLION A MONTH<br>
     unaffordable for the blind<br>`},
     {
-        src: './images/collages/nikita/обработанныекартинки/20230203-152924(1).jpeg',
+        src: './images/collages/nikita/обработанныекартинки/20230203-152924(1).jpg',
         text: `«men are like pies: either with cabbage, or with eggs»`
     },
     {
-        src: './images/collages/nikita/обработанныекартинки/20230203-152924.jpeg',
+        src: './images/collages/nikita/обработанныекартинки/20230203-152924.jpg',
         text: `main<br>
     ingredient:<br>
     how<br>
@@ -230,14 +230,14 @@ window[sharedNames.images] = [
     Money flowed out`
     },
     {
-        src: './images/collages/nikita/обработанныекартинки/20230203-153041(1).jpeg',
+        src: './images/collages/nikita/обработанныекартинки/20230203-153041(1).jpg',
         text: `<br>
         <br>
     every day<br>
     rises and falls<br>`
     },
     {
-        src: './images/collages/nikita/обработанныекартинки/20230203-153041.jpeg',
+        src: './images/collages/nikita/обработанныекартинки/20230203-153041.jpg',
         text: `<br>
     retirement witout worries?<br>
     <br>
@@ -246,14 +246,14 @@ window[sharedNames.images] = [
     And nothing's gonna happen to us!<br>
     `},
     {
-        src: './images/collages/nikita/обработанныекартинки/20230203-153212(1).jpeg',
+        src: './images/collages/nikita/обработанныекартинки/20230203-153212(1).jpg',
         text: `<br>
      GAY-ATTACK<br>
      <br>
     AGAINST ALL ODDS<br>
     `},
     {
-        src: './images/collages/nikita/обработанныекартинки/20230203-153212.jpeg',
+        src: './images/collages/nikita/обработанныекартинки/20230203-153212.jpg',
         text: `<br>
         <br>
     GAY-ATTACK<br>
@@ -262,7 +262,7 @@ window[sharedNames.images] = [
      LGBT  RELEASED <br>
     `},
     {
-        src: './images/collages/nikita/обработанныекартинки/20230203-153400.jpeg',
+        src: './images/collages/nikita/обработанныекартинки/20230203-153400.jpg',
         text: `<br>
     LET SCANDAL HAPPEN<br>`
     },
@@ -292,7 +292,7 @@ window[sharedNames.images] = [
     /// Liza
 
     {
-        src: "./images/collages/liza/IMG_1718.PNG",
+        src: "./images/collages/liza/IMG_1718.jpg",
         text: "\nGREEN\n\n"
     },
     {
@@ -300,63 +300,63 @@ window[sharedNames.images] = [
         text: "\nFlaming\n Secret\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1744.PNG",
+        src: "./images/collages/liza/IMG_1744.jpg",
         text: "\nmusic\nstars\n\nsecret of your charms\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1745.PNG",
+        src: "./images/collages/liza/IMG_1745.jpg",
         text: "\nTEMPTATION\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1746.PNG",
+        src: "./images/collages/liza/IMG_1746.jpg",
         text: "\nFUTURE\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1747.PNG",
+        src: "./images/collages/liza/IMG_1747.jpg",
         text: "\nAre you enduring that pain?\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1749.PNG",
+        src: "./images/collages/liza/IMG_1749.jpg",
         text: "\nWhere to start?\n- Kindness\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1750.PNG",
+        src: "./images/collages/liza/IMG_1750.jpg",
         text: "\nFeast of\nImagination\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1751.PNG",
+        src: "./images/collages/liza/IMG_1751.jpg",
         text: "\nThere is never too much\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1752.PNG",
+        src: "./images/collages/liza/IMG_1752.jpg",
         text: "\nYou’ll find an interesting job\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1753.PNG",
+        src: "./images/collages/liza/IMG_1753.jpg",
         text: "\nFrom distant wanderings\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1754.PNG",
+        src: "./images/collages/liza/IMG_1754.jpg",
         text: "\nAppetite comes with eating\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1755.PNG",
+        src: "./images/collages/liza/IMG_1755.jpg",
         text: "\ntwo\n worlds\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1757.PNG",
+        src: "./images/collages/liza/IMG_1757.jpg",
         text: "\nNext\n Mission possible\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1758.PNG",
+        src: "./images/collages/liza/IMG_1758.jpg",
         text: "\nI THINK\nYOU MADE A MISTAKE\n\n(opinion)\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1759.PNG",
+        src: "./images/collages/liza/IMG_1759.jpg",
         text: "\n\nWith all the comforts\nEverything for the good of man\n\nsex\n\n"
     },
     {
-        src: "./images/collages/liza/IMG_1760.PNG",
+        src: "./images/collages/liza/IMG_1760.jpg",
         text: "\npinholed\ndream\n"
     },
 
