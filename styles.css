@@ -64,7 +64,7 @@ body {
 }
 .oracle__prediction-button {
     display: block;
-    margin: 50px auto 0;
+    margin: 50px auto 25px;
     background: rgb(77, 4, 129);
     color: white;
     height: 50px;
@@ -184,6 +184,7 @@ body {
 
     .oracle__prediction-button {
         margin-top: 25px;
+        margin-bottom: 15px;
     }
 
     .opening__text {
