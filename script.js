@@ -1,6 +1,7 @@
 
 function selectLang(language) {
     document.querySelector('.app-wrapper').dataset.lang = language
+    localStorage.setItem('language', language)
 }
 
 var i = window[sharedNames.images];

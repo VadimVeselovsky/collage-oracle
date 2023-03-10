@@ -31,7 +31,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: start;
-    height: 100%;
     padding: 0 50px;
     flex-grow: 1;
     display: hidden;
@@ -49,6 +48,7 @@ body {
 .oracle__prediction {
     grid-column-start: 2;
     position: relative;
+    margin: 0 85px;
 }
 .oracle__prediction-button {
     display: block;
@@ -63,7 +63,9 @@ body {
 }
 
 .opening__text {
-    width: 277px;
+    max-width: 567px;
+    font-size: 30px;
+    font-family: Montserrat;
 }
 
 [role="opener"] {
@@ -82,8 +84,6 @@ body {
     cursor: pointer;
 }
 
-
-
 .loading {
     justify-content: center;
     display: flex;
@@ -93,6 +93,22 @@ body {
 
 .loading__video {
     width: 300px;
+}
+
+.translation-wrapper {
+    width: 360px;
+    height: 480px;
+    position: relative;
+    font-family: "Montserrat";
+    max-width: 100%;
+}
+
+#translation {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -128,6 +144,34 @@ body {
         margin-left: 0 !important;
         margin-top: 20px;
     }
+
+    .oracle__prediction {
+        margin: 0;
+    }
+
+    .oracle__prediction-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .oracle__prediction-button {
+        margin-top: 25px;
+    }
+
+    .opening__text {
+        width: auto;
+        font-size: 22px;
+        margin: 80px 0 40px;
+    }
+
+    .translation-wrapper {
+        padding: 5px 0 0px;
+        height: auto;
+    }
+
+    #translation {
+        position: static;
+    }
 }
 
 [data-lang="ru"] [role="lang-rus"] {
@@ -136,6 +180,10 @@ body {
 
 [data-lang="ru"] #translation {
     display: none !important;
+}
+
+[data-lang="ru"] .translation-wrapper {
+    padding: 0;
 }
 
 [data-lang="en"] [role="lang-eng"] {

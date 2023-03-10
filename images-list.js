@@ -4,38 +4,21 @@ window[sharedNames.images] = [
 
     {
         src: './images/collages/alena_k/1.jpg',
-        html: `<span style="position: absolute;top: 24%;right: 5%;font-weight: 800;font-size: 21px;">TASTE IT </span>
-        <span style="
-            left: 43%;
-            position: absolute;
-            top: 40%;
-            text-align: center;
-            font-size: 13px;
-        ">sandwiches<br>
-                pork belly<br>
-                pork ribs<br>
-                lemon roll<br>
-                chimichuri sauce<br>
-                hot croutons<br>
-                chili pepper<br>
-                onion<br>
-                red sweet pepper<br>
-                white beans<br>
-                vegetable oil with garlic<br>
-                pork chorizo<br>
-                corn</span>
-        <span style="
-        left: 10%;
-        position: absolute;
-        top: 56%;
-        text-align: center;
-        font-size: 13px;
-    ">
-    poppy seed roll<br>
-    garlic<br>
-    water<br>
-    carrot<br>
-    </span>`
+        text: `TASTE IT
+            sandwiches // pork belly// 
+            pork ribs//lemon roll/
+             chimichuri sauce/hot croutons
+            chili pepper//onion
+            red sweet pepper//white beans
+            poppy seed roll
+            garlic
+            water
+            carrot 
+             vegetable oil with garlic
+            pork chorizo
+            tomato sauce
+            corn
+            `
     },
     {
         src: './images/collages/alena_k/2.jpg',
@@ -206,79 +189,69 @@ window[sharedNames.images] = [
 
     {
         src: './images/collages/nikita/обработанныекартинки/20230203-152824(1).jpg',
-        text: `HORSE IN A COAT<br>
-        <br>
-    just for<br>
+        text: `HORSE IN A COAT
+        
+    just for
     JOY
     `},
     {
         src: './images/collages/nikita/обработанныекартинки/20230203-152824.jpg',
-        text: `A MILLION A MONTH<br>
-    unaffordable for the blind<br>`},
+        text: `A MILLION A MONTH
+    unaffordable for the blind`},
     {
         src: './images/collages/nikita/обработанныекартинки/20230203-152924(1).jpg',
         text: `«men are like pies: either with cabbage, or with eggs»`
     },
     {
         src: './images/collages/nikita/обработанныекартинки/20230203-152924.jpg',
-        text: `main<br>
-    ingredient:<br>
-    how<br>
-    to get money ….<br>
-    <br>
-    <br>
+        text: `main
+    ingredient:
+    how
+    to get money ….
+    
+    
     Money flowed out`
     },
     {
         src: './images/collages/nikita/обработанныекартинки/20230203-153041(1).jpg',
-        text: `<br>
-        <br>
-    every day<br>
-    rises and falls<br>`
+        text: `every day
+    rises and falls`
     },
     {
         src: './images/collages/nikita/обработанныекартинки/20230203-153041.jpg',
-        text: `<br>
-    retirement witout worries?<br>
-    <br>
-    They're fine without it!<br>
-    <br>
-    And nothing's gonna happen to us!<br>
-    `},
+        text: `retirement witout worries?
+    
+    They're fine without it!
+    
+    And nothing's gonna happen to us!`},
     {
         src: './images/collages/nikita/обработанныекартинки/20230203-153212(1).jpg',
-        text: `<br>
-     GAY-ATTACK<br>
-     <br>
-    AGAINST ALL ODDS<br>
-    `},
+        text: `GAY-ATTACK
+     
+    AGAINST ALL ODDS`},
     {
         src: './images/collages/nikita/обработанныекартинки/20230203-153212.jpg',
-        text: `<br>
-        <br>
-    GAY-ATTACK<br>
-    COMES OUT<br>
-    OF SHADOWS<br>
-     LGBT  RELEASED <br>
-    `},
+        text: `GAY-ATTACK
+    COMES OUT
+    OF SHADOWS
+     LGBT  RELEASED`},
     {
         src: './images/collages/nikita/обработанныекартинки/20230203-153400.jpg',
-        text: `<br>
-    LET SCANDAL HAPPEN<br>`
+        text: `LET SCANDAL HAPPEN`
     },
 
     /// Vava
 
     {
-        src: './images/collages/vava/20230203-154159.jpg', text: `All strings broke?<br>
-    Do you think being healthy is sad?<br>
+        src: './images/collages/vava/20230203-154159.jpg', text: `All strings broke?
+    Do you think being healthy is sad?
     Revelation is an expensive thing.` },
     { src: './images/collages/vava/20230203-15415(1).jpg', text: `HOW TO HEAL` },
     {
-        src: './images/collages/vava/20230203-154303.jpg', text: `Enough drinking blood….<br>
+        src: './images/collages/vava/20230203-154303.jpg', text: `Enough drinking blood….
      Sex is within our power`},
     {
-        src: './images/collages/vava/20230203-154410.jpg', text: `From the perspective of 49 cents <br>
+        src: './images/collages/vava/20230203-154410.jpg', text: `From the perspective of 49 cents 
     it is worth to distinguish ageing from illness `},
     { src: './images/collages/vava/20230203-154523.jpg', text: `Bathhouses will float` },
     { src: './images/collages/vava/20230203-154631.jpg', text: `Great loss` },
@@ -286,7 +259,7 @@ window[sharedNames.images] = [
     { src: './images/collages/vava/20230203-154921.jpg', text: `It’s not far from abruption` },
     { src: './images/collages/vava/20230203-155009.jpg', text: `A minute for self-discovery` },
     {
-        src: './images/collages/vava/20230203-161842.jpg', text: `Feminine magic<br>
+        src: './images/collages/vava/20230203-161842.jpg', text: `Feminine magic
      Accept and destroy`},
 
     /// Liza
@@ -406,5 +379,5 @@ window[sharedNames.images] = [
 
 ].map(item => ({
     image: item.src,
-    html: item.html || '<span style="position: absolute; top: 30%; left: 50%; transform: translateX(-50%);">' + item.text.trim().split('\n').join('<br>') + '</span>'
+    html: item.text.replace(/(^[\n\s]+)|(([\n\s]+$))/g, '').split('\n').join('<br>')
 }))

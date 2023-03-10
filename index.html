@@ -19,10 +19,12 @@
   <script src="./script.js"></script>
 </head>
 
-
-
 <body>
-  <div class="app-wrapper" data-lang="en" style="padding-bottom: 255px;">
+  <div class="app-wrapper" data-lang="" style="padding-bottom: 255px;" id="root">
+    <script>
+      const lang = localStorage.getItem('language') || 'ru'
+      document.getElementById('root').dataset.lang = lang
+    </script>
     <div class="header">
       <div class="header__side-button header__side-button_left">
         <span onclick="selectLang('en')" role="lang-eng">en</span>
@@ -35,21 +37,22 @@
       <div class="header__side-button header__side-button_right">collage oracle</div>
     </div>
     <div class="opening" role="opener">
-      <div class="opening__text" style="font-size: 30px;font-family: Montserrat;width: 567px;">This is a place of
+      <div class="opening__text">This is a place of
         collage poetry and weird fortune-telling. Click the button to get your collage prediction.</div>
-      <button onclick="doPrediction()" class="oracle__prediction-button">play</button>
+      <button onclick=" doPrediction()" class="oracle__prediction-button">play</button>
     </div>
-    <div class="oracle oracle_loading hidden" role="player">
-      <div style="margin-right: 25px; padding-left: 20px">
-        <img style="visibility: hidden;" width="400" src="./images/left.png">
+    <div class="hidden" role="player">
+      <div class="oracle oracle_loading">
+        <div style="width: 360px">
+        </div>
+        <div class="oracle__prediction">
+          <img class="oracle__prediction-image" id="qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg">
+        </div>
+        <div class="translation-wrapper">
+          <span id="translation"></span>
+        </div>
       </div>
-      <div class="oracle__prediction">
-        <img class="oracle__prediction-image" id="qweshtrjydhstrdthalgajrbaovbaouergbuelrhgblxhbdrg">
-        <button onclick="doPrediction()" class="oracle__prediction-button">play</button>
-      </div>
-      <div style="margin-left: 85px;width: 360px;height: 480px;position: relative;font-family: 'Montserrat';">
-        <div id="translation"></div>
-      </div>
+      <button onclick="doPrediction()" class="oracle__prediction-button">play</button>
     </div>
     <div role="loading" class="hidden loading">
       <video id="loading-video-element" class="loading__video" loop src="./images/loading.mp4"></video>
