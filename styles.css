@@ -27,6 +27,10 @@ body {
     color: rgb(77, 4, 129);
 }
 
+.header__logo-wrapper {
+    padding: 0 30px;
+}
+
 .oracle {
     display: flex;
     justify-content: center;
@@ -114,13 +118,25 @@ body {
 @media (max-width: 767px) {
     .header {
         grid-template-columns: 1fr 1fr;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .header__side-button {
         grid-row-start: 2;
+        font-size: 25px;
+    }
+
+    .header__side-button_left {
+        justify-self: start;
+    }
+
+    .header__side-button_right {
+        justify-self: end;
     }
 
     .header__logo-wrapper {
+        padding: 0;
         grid-column: 1/3;
     }
 

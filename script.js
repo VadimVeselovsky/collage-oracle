@@ -51,7 +51,7 @@ function doPrediction() {
         setTimeout(() => {
             toggleLoaderVideo(false)
             showScreen('player')
-        }, Math.random() * 1000 + 2000)
+        }, Math.random() * 0 + 500)
     }
 
     function toggleLoaderVideo(isPlay) {
