@@ -31,6 +31,14 @@ body {
     padding: 0 30px;
 }
 
+.oracle-decoration {
+    width: 360px;
+}
+
+.oracle-decoration__image {
+    width: 100%;
+}
+
 .oracle {
     display: flex;
     justify-content: center;
@@ -138,6 +146,10 @@ body {
     .header__logo-wrapper {
         padding: 0;
         grid-column: 1/3;
+    }
+
+    .oracle-decoration__image {
+        display: none;
     }
 
     .oracle {
