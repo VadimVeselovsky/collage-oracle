@@ -8,9 +8,12 @@ var i = window[sharedNames.images];
 let test = false,
     images = i
 
+let w = 0;
+
 function select(n) {
     return Math.floor(Math.random() * n) 
     // return 0
+    // return w++;
 }
 
 function getRandomImage() {

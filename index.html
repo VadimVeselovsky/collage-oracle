@@ -56,7 +56,9 @@
       <button onclick="doPrediction()" class="oracle__prediction-button">play</button>
     </div>
     <div role="loading" class="hidden loading">
-      <video id="loading-video-element" class="loading__video" loop src="./images/loading.mp4"></video>
+      <video id="loading-video-element" class="loading__video" loop>
+        <source src="./images/loading.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
