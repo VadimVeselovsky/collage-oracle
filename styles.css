@@ -72,10 +72,12 @@ body {
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    font-size: 15px;
+    font-family: Tinos;
 }
 
 .opening__text {
-    max-width: 567px;
+    max-width: 600px;
     font-size: 30px;
     font-family: Montserrat;
 }
@@ -183,13 +185,15 @@ body {
     }
 
     .oracle__prediction-button {
-        margin-top: 25px;
+        margin-top: -2px;
         margin-bottom: 15px;
     }
 
     .opening__text {
         width: auto;
-        font-size: 22px;
+        text-align: center;
+        font-size: 17px;
+        transform: scale(1.2);
         margin: 80px 0 40px;
     }
 
@@ -213,6 +217,22 @@ body {
 
 [data-lang="ru"] .translation-wrapper {
     padding: 0;
+}
+
+[data-lang="ru"] [data-translation="ru"] {
+    display: span;
+}
+
+[data-lang="ru"] [data-translation="en"] {
+    display: none;
+}
+
+[data-lang="en"] [data-translation="en"] {
+    display: span;
+}
+
+[data-lang="en"] [data-translation="ru"] {
+    display: none;
 }
 
 [data-lang="en"] [role="lang-eng"] {
