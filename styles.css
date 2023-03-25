@@ -70,13 +70,12 @@ body {
     margin: 50px auto 25px;
     background: rgb(77, 4, 129);
     color: white;
-    height: 50px;
-    width: 70px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
     font-size: 15px;
     font-family: Tinos;
+    padding: 15px 15px;
 }
 
 .opening__text {
@@ -227,16 +226,8 @@ body {
     padding: 0;
 }
 
-[data-lang="ru"] [data-translation="ru"] {
-    display: span;
-}
-
 [data-lang="ru"] [data-translation="en"] {
     display: none;
-}
-
-[data-lang="en"] [data-translation="en"] {
-    display: span;
 }
 
 [data-lang="en"] [data-translation="ru"] {
