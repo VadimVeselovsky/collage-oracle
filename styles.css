@@ -23,6 +23,7 @@ body {
 }
 
 .header__side-button {
+    user-select: none;
     align-self: flex-end;
     justify-self: center;
     font-size: calc(2.3vw + 5px);

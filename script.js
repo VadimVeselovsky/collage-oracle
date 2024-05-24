@@ -4,6 +4,10 @@ function selectLang(language) {
     localStorage.setItem('language', language)
 }
 
+function getLang() {
+    return document.getElementById('root').dataset.lang
+}
+
 var i = window[sharedNames.images];
 let test = false,
     images = i
